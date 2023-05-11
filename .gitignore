@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/TestValidationPassword.XUnit.IntegracaoAPI/TestValidationPassword.XUnit.IntegracaoAPI.csproj
+/TestValidationPassword.XUnit.IntegracaoAPI
