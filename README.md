@@ -8,7 +8,7 @@ Esta documentação se reflete na criação de uma aplicação que valida se uma
 - Ao menos 1 número
 - Ao menos 1 caractere especial
 
-Para isso, seguimos os seguintes passos:
+Para isso, foram desenvidos os seguintes passos:
 
 - Implementação das regras de validação em classes separadas que implementam a interface IPasswordValida
 - Criação de uma classe Validator que usa as regras implementadas e valida a senha
@@ -20,3 +20,12 @@ Para isso, seguimos os seguintes passos:
 - Criação de testes unitários para validar a funcionalidade da aplicação
 - Organização do código em pastas de acordo com o conceito de Clean Code
 - Utilização de injeção de dependência para evitar acoplamento entre as classes e facilitar os testes
+
+
+
+# Instruções de uso
+
+- Para ter uma experiência de uso, por favor tenha o .Net Core 6 e o Visual Studio instalados.
+- Os projetos de teste estão escritos em XUnit tanto integração quanto unitários
+
+
