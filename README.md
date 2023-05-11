@@ -18,6 +18,7 @@ Para isso, foram desenvidos os seguintes passos:
 - Criação da classe PasswordValidationException para lançar exceções caso a senha seja inválida
 - Criação de uma API que expõe um endpoint HTTP POST que recebe uma senha no corpo da requisição e retorna true caso a senha seja válida e false caso contrário
 - Criação de testes unitários para validar a funcionalidade da aplicação
+- Criação de testes de integração para validar a funcionalidade da aplicação passando pela API desenvolvida
 - Organização do código em pastas de acordo com o conceito de Clean Code
 - Utilização de injeção de dependência para evitar acoplamento entre as classes e facilitar os testes
 
