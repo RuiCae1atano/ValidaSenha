@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationPassword.API", "ValidaSenha.API\ValidationPassword.API.csproj", "{4D8A0D98-1ED4-4977-918A-B26B070327EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationPassword.Domain", "Validation.Domain\ValidationPassword.Domain.csproj", "{B1C8F793-2C05-4D55-A4E8-71F820885B16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationPassword.Infrastructure", "Infrastructure\ValidationPassword.Infrastructure.csproj", "{0D58F8B7-465C-4944-B238-C69C4A9F0F3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationPassword.Application", "ValidationPassword.Application\ValidationPassword.Application.csproj", "{17231750-4F50-4D9A-95AB-1E3887CD831A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidaSenha.Tests", "ValidaSenha.Tests\ValidaSenha.Tests.csproj", "{304DE697-779F-40CC-8608-832E3EA910F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6C86771C-1DDA-401C-9717-5597F39C8F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationPassword.XUnit", "ValidationPassword.XUnit\ValidationPassword.XUnit.csproj", "{BFE58E76-C717-4D83-AD5F-A660847AC416}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D8A0D98-1ED4-4977-918A-B26B070327EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D8A0D98-1ED4-4977-918A-B26B070327EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D8A0D98-1ED4-4977-918A-B26B070327EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D8A0D98-1ED4-4977-918A-B26B070327EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C8F793-2C05-4D55-A4E8-71F820885B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C8F793-2C05-4D55-A4E8-71F820885B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C8F793-2C05-4D55-A4E8-71F820885B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C8F793-2C05-4D55-A4E8-71F820885B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D58F8B7-465C-4944-B238-C69C4A9F0F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D58F8B7-465C-4944-B238-C69C4A9F0F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D58F8B7-465C-4944-B238-C69C4A9F0F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D58F8B7-465C-4944-B238-C69C4A9F0F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17231750-4F50-4D9A-95AB-1E3887CD831A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17231750-4F50-4D9A-95AB-1E3887CD831A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17231750-4F50-4D9A-95AB-1E3887CD831A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17231750-4F50-4D9A-95AB-1E3887CD831A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{304DE697-779F-40CC-8608-832E3EA910F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304DE697-779F-40CC-8608-832E3EA910F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304DE697-779F-40CC-8608-832E3EA910F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304DE697-779F-40CC-8608-832E3EA910F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{304DE697-779F-40CC-8608-832E3EA910F3} = {6C86771C-1DDA-401C-9717-5597F39C8F87}
+		{BFE58E76-C717-4D83-AD5F-A660847AC416} = {6C86771C-1DDA-401C-9717-5597F39C8F87}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F7FF1E9-8736-42D2-B2CB-95D3B0F356EA}
+	EndGlobalSection
+EndGlobal
