@@ -19,8 +19,8 @@ namespace ValidaSenha.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
         public IActionResult Post([FromBody] Password password)
         {
-            _passwordValidatorService.ValidatePassword(password);
-            return Ok("Sua password foi validada com sucesso");
+            var result = _passwordValidatorService.ValidatePassword(password);
+            return Ok(result.Message);
         }
     }
 }

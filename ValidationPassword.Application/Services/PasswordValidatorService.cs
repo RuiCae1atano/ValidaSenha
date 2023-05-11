@@ -17,18 +17,19 @@ namespace ValidationSenha.Appication.Services
         private readonly CharactersValidator _charactersValidator;
         private readonly LengthValidator _lengthValidator;
         private readonly RepeatedCharactersValidator _repeatedCharactersValidator;
-        
+        private int minimumLength = 1;
+        private readonly IValidationResponse _validationResponse;
 
-        public PasswordValidatorService(RegexExpressions regexExpressions, int minimumLength)
+        public PasswordValidatorService(IRegexExpressions regexExpressions, IValidationResponse validationResponse)
         {
             _charactersValidator = new CharactersValidator(regexExpressions);
             _lengthValidator = new LengthValidator(minimumLength);
             _repeatedCharactersValidator = new RepeatedCharactersValidator();
+            _validationResponse = validationResponse;
         }
 
-        public ValidationResponse ValidatePassword(Password password)
+        public IValidationResponse ValidatePassword(Password password)
         {
-            var result = new ValidationResponse(false, "");
             try
             {
                 _charactersValidator.Validate(password);
@@ -37,11 +38,14 @@ namespace ValidationSenha.Appication.Services
             }
             catch (PasswordValidationException ex)
             {
-                return new ValidationResponse(false, ex.Message);
+                _validationResponse.IsValid = false;
+                _validationResponse.Message = ex.Message;
+                return _validationResponse;
             }
 
-            result.IsValid = true;
-            return result;
+            _validationResponse.IsValid = true;
+            _validationResponse.Message = "Senha validada com sucesso";
+            return _validationResponse;
         }
     }
 }

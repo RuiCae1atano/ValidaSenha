@@ -10,6 +10,6 @@ namespace ValidationPassword.Application.Interfaces
 {
     public interface IPasswordValidatorService
     {
-        ValidationResponse ValidatePassword(Password password);
+        IValidationResponse ValidatePassword(Password password);
     }
 }
