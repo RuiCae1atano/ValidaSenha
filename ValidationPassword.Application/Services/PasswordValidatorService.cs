@@ -40,7 +40,7 @@ namespace ValidationSenha.Appication.Services
             {
                 _validationResponse.IsValid = false;
                 _validationResponse.Message = ex.Message;
-                return _validationResponse;
+                throw ex;
             }
 
             _validationResponse.IsValid = true;

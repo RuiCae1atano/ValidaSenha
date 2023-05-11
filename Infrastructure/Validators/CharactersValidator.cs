@@ -12,6 +12,7 @@ using ValidationPassword.Infrastructure.Messages;
 
 namespace ValidaSenha.Infrastructure.Validators
 {
+
     public class CharactersValidator : IPasswordValidator
     {
         private readonly IRegexExpressions _regexExpressions;
@@ -27,7 +28,7 @@ namespace ValidaSenha.Infrastructure.Validators
         {
             if (!Reg.IsMatch(password.Value, _regexExpressions.SpecialCharacters))
             {
-                throw new PasswordValidationException(string.Format(_messageService.GetErrorMessage("InvalidPasswordLength")));
+                throw new PasswordValidationException(string.Format(_messageService.GetErrorMessage("SpecialCharacters")));
             }
 
             if (!Reg.IsMatch(password.Value, _regexExpressions.UpperCaseLetters))

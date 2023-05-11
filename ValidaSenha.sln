@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6C86771C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationPassword.XUnit", "ValidationPassword.XUnit\ValidationPassword.XUnit.csproj", "{BFE58E76-C717-4D83-AD5F-A660847AC416}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestValidationPassword.XUnit.IntegracaoAPI", "TestValidationPassword.XUnit.IntegracaoAPI\TestValidationPassword.XUnit.IntegracaoAPI.csproj", "{67A9CA8F-F36B-4CC0-8C88-65A3E7076765}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,12 +43,17 @@ Global
 		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A9CA8F-F36B-4CC0-8C88-65A3E7076765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A9CA8F-F36B-4CC0-8C88-65A3E7076765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A9CA8F-F36B-4CC0-8C88-65A3E7076765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A9CA8F-F36B-4CC0-8C88-65A3E7076765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BFE58E76-C717-4D83-AD5F-A660847AC416} = {6C86771C-1DDA-401C-9717-5597F39C8F87}
+		{67A9CA8F-F36B-4CC0-8C88-65A3E7076765} = {6C86771C-1DDA-401C-9717-5597F39C8F87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F7FF1E9-8736-42D2-B2CB-95D3B0F356EA}

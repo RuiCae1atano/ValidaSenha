@@ -12,10 +12,5 @@ namespace ValidationPassword.Domain.Models
         public bool IsValid { get; set; }
         public string? Message { get; set; }
 
-        //public ValidationResponse(bool isValid, string message) 
-        //{
-        //    IsValid = isValid;
-        //    Message = message;
-        //}
     }
 }

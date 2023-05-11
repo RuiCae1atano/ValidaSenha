@@ -16,7 +16,7 @@ builder.Services.AddScoped<IMessageService, MessageService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddMvc(options =>
+builder.Services.AddControllers(options =>
 {
     options.Filters.Add(typeof(FilterExceptions));
 });

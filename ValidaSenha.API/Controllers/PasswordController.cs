@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using ValidationPassword.API.Filters;
 using ValidationPassword.Application.Interfaces;
 using ValidationSenha.Domain.Models;
 
 namespace ValidaSenha.API.Controllers
 {
+    [TypeFilter(typeof(FilterExceptions))]
     [ApiController]
     [Route("[controller]")]
     public class PasswordController : ControllerBase
@@ -20,7 +22,7 @@ namespace ValidaSenha.API.Controllers
         public IActionResult Post([FromBody] Password password)
         {
             var result = _passwordValidatorService.ValidatePassword(password);
-            return Ok(result.Message);
+            return Ok(result);
         }
     }
 }
