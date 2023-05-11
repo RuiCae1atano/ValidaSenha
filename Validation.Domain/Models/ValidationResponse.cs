@@ -10,12 +10,12 @@ namespace ValidationPassword.Domain.Models
     public class ValidationResponse : IValidationResponse
     {
         public bool IsValid { get; set; }
-        public string Message { get; set; }
+        public string? Message { get; set; }
 
-        public ValidationResponse(bool isValid, string message) 
-        {
-            IsValid = isValid;
-            Message = message;
-        }
+        //public ValidationResponse(bool isValid, string message) 
+        //{
+        //    IsValid = isValid;
+        //    Message = message;
+        //}
     }
 }

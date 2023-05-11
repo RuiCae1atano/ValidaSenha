@@ -13,12 +13,13 @@ namespace ValidationPassword.Infrastructure.Messages
 
         public MessageService()
         {
-            _resourceManager = new ResourceManager(typeof(Resources));
+            _resourceManager = new ResourceManager(typeof(CustomMessages));
         }
 
         public string GetErrorMessage(string key)
         {
-            return _resourceManager.GetString(key);
+            string? errorMessage = _resourceManager.GetString(key);
+            return errorMessage ?? $"Mensagem de erro não encontrada para a chave '{key}'";
         }
     }
 }

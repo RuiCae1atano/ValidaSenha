@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ValidaSenha.Infrastructure.Regex;
 using ValidaSenha.Infrastructure.Validators;
 using ValidationPassword.Application.Interfaces;
-using ValidationPassword.Domain.Models;
+using ValidationPassword.Infrastructure.Messages;
 using ValidationSenha.Domain.Exceptions;
 using ValidationSenha.Domain.Models;
 
@@ -20,9 +20,9 @@ namespace ValidationSenha.Appication.Services
         private int minimumLength = 1;
         private readonly IValidationResponse _validationResponse;
 
-        public PasswordValidatorService(IRegexExpressions regexExpressions, IValidationResponse validationResponse)
+        public PasswordValidatorService(IRegexExpressions regexExpressions, IValidationResponse validationResponse, IMessageService messageService)
         {
-            _charactersValidator = new CharactersValidator(regexExpressions);
+            _charactersValidator = new CharactersValidator(regexExpressions, messageService);
             _lengthValidator = new LengthValidator(minimumLength);
             _repeatedCharactersValidator = new RepeatedCharactersValidator();
             _validationResponse = validationResponse;

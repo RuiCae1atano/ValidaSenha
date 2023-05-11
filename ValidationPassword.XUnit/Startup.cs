@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ValidaSenha.Infrastructure.Regex;
 using ValidationPassword.Application.Interfaces;
+using ValidationPassword.Domain.Models;
+using ValidationPassword.Infrastructure.Messages;
 using ValidationSenha.Appication.Services;
 
 namespace ValidationPassword.XUnit
@@ -16,6 +18,9 @@ namespace ValidationPassword.XUnit
         {
             services.AddTransient<IPasswordValidatorService, PasswordValidatorService>();
             services.AddTransient<IRegexExpressions, RegexExpressions>();
+            services.AddTransient<IValidationResponse, ValidationResponse>();
+            services.AddTransient<IMessageService, MessageService>();
+
         }
     }
 }

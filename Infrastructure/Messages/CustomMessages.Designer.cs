@@ -59,5 +59,59 @@ namespace ValidationPassword.Infrastructure.Messages {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve conter ao menos 1 dígito..
+        /// </summary>
+        internal static string Digits {
+            get {
+                return ResourceManager.GetString("Digits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve conter ao menos 1 letra minúscula..
+        /// </summary>
+        internal static string LowerCaseLetters {
+            get {
+                return ResourceManager.GetString("LowerCaseLetters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve ter no mínimo {_minimumLength} caracteres..
+        /// </summary>
+        internal static string MinimumLength {
+            get {
+                return ResourceManager.GetString("MinimumLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha não pode conter caracteres repetidos..
+        /// </summary>
+        internal static string RepeatedCharacter {
+            get {
+                return ResourceManager.GetString("RepeatedCharacter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve conter ao menos 1 caractere especial..
+        /// </summary>
+        internal static string SpecialCharacters {
+            get {
+                return ResourceManager.GetString("SpecialCharacters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a A senha deve conter ao menos 1 letra maiúscula..
+        /// </summary>
+        internal static string UpperCaseLetters {
+            get {
+                return ResourceManager.GetString("UpperCaseLetters", resourceCulture);
+            }
+        }
     }
 }

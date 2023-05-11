@@ -1,6 +1,8 @@
 using ValidaSenha.Infrastructure.Regex;
 using ValidationPassword.API.Filters;
 using ValidationPassword.Application.Interfaces;
+using ValidationPassword.Domain.Models;
+using ValidationPassword.Infrastructure.Messages;
 using ValidationSenha.Appication.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,9 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IPasswordValidatorService, PasswordValidatorService>();
 builder.Services.AddScoped<IRegexExpressions, RegexExpressions>();
+builder.Services.AddScoped<IValidationResponse, ValidationResponse>();
+builder.Services.AddScoped<IMessageService, MessageService>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMvc(options =>

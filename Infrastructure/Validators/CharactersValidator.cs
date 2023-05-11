@@ -8,38 +8,41 @@ using ValidaSenha.Infrastructure.Regex;
 using ValidationSenha.Domain.Exceptions;
 using ValidationSenha.Domain.Interfaces;
 using ValidationSenha.Domain.Models;
+using ValidationPassword.Infrastructure.Messages;
 
 namespace ValidaSenha.Infrastructure.Validators
 {
     public class CharactersValidator : IPasswordValidator
     {
         private readonly IRegexExpressions _regexExpressions;
+        private readonly IMessageService _messageService;
 
-        public CharactersValidator(IRegexExpressions regexExpressions)
+        public CharactersValidator(IRegexExpressions regexExpressions, IMessageService messageService)
         {
             _regexExpressions = regexExpressions;
+            _messageService = messageService;
         }
 
         public void Validate(Password password)
         {
             if (!Reg.IsMatch(password.Value, _regexExpressions.SpecialCharacters))
             {
-                throw new PasswordValidationException("A senha deve conter ao menos 1 caractere especial.");
+                throw new PasswordValidationException(string.Format(_messageService.GetErrorMessage("InvalidPasswordLength")));
             }
 
             if (!Reg.IsMatch(password.Value, _regexExpressions.UpperCaseLetters))
             {
-                throw new PasswordValidationException("A senha deve conter ao menos 1 letra maiúscula.");
+                throw new PasswordValidationException(string.Format(_messageService.GetErrorMessage("UpperCaseLetters")));
             }
 
             if (!Reg.IsMatch(password.Value, _regexExpressions.LowerCaseLetters))
             {
-                throw new PasswordValidationException("A senha deve conter ao menos 1 letra minúscula.");
+                throw new PasswordValidationException(string.Format(_messageService.GetErrorMessage("LowerCaseLetters")));
             }
 
             if (!Reg.IsMatch(password.Value, _regexExpressions.Digits))
             {
-                throw new PasswordValidationException("A senha deve conter ao menos 1 dígito.");
+                throw new PasswordValidationException(string.Format(_messageService.GetErrorMessage("Digits")));
             }
         }
     }

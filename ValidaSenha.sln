@@ -11,11 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationPassword.Infrastr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationPassword.Application", "ValidationPassword.Application\ValidationPassword.Application.csproj", "{17231750-4F50-4D9A-95AB-1E3887CD831A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidaSenha.Tests", "ValidaSenha.Tests\ValidaSenha.Tests.csproj", "{304DE697-779F-40CC-8608-832E3EA910F3}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6C86771C-1DDA-401C-9717-5597F39C8F87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationPassword.XUnit", "ValidationPassword.XUnit\ValidationPassword.XUnit.csproj", "{BFE58E76-C717-4D83-AD5F-A660847AC416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationPassword.XUnit", "ValidationPassword.XUnit\ValidationPassword.XUnit.csproj", "{BFE58E76-C717-4D83-AD5F-A660847AC416}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +37,6 @@ Global
 		{17231750-4F50-4D9A-95AB-1E3887CD831A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17231750-4F50-4D9A-95AB-1E3887CD831A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17231750-4F50-4D9A-95AB-1E3887CD831A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{304DE697-779F-40CC-8608-832E3EA910F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{304DE697-779F-40CC-8608-832E3EA910F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{304DE697-779F-40CC-8608-832E3EA910F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{304DE697-779F-40CC-8608-832E3EA910F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFE58E76-C717-4D83-AD5F-A660847AC416}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -52,7 +46,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{304DE697-779F-40CC-8608-832E3EA910F3} = {6C86771C-1DDA-401C-9717-5597F39C8F87}
 		{BFE58E76-C717-4D83-AD5F-A660847AC416} = {6C86771C-1DDA-401C-9717-5597F39C8F87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
