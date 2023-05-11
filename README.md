@@ -28,4 +28,3 @@ Para isso, foram desenvidos os seguintes passos:
 - Para ter uma experiência de uso, por favor tenha o .Net Core 6 e o Visual Studio instalados.
 - Os projetos de teste estão escritos em XUnit tanto integração quanto unitários
 
-
